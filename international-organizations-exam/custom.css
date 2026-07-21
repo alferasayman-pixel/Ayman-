@@ -1,0 +1,90 @@
+/* تعديلات الهوية البصرية والتصحيح الفوري */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:var(--academy-mark);
+  background-repeat:repeat;
+  background-position:center top;
+  background-size:290px auto;
+  opacity:.07;
+  pointer-events:none;
+  z-index:0;
+  filter:saturate(95%) contrast(102%);
+}
+
+.app,.topbar,main,.toast{position:relative;z-index:1}
+
+.hero::before,
+.test-card::before,
+.exam-side::before,
+.question-card::before,
+.result-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:var(--academy-mark);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:min(76%,430px) auto;
+  opacity:.14;
+  pointer-events:none;
+  filter:saturate(96%) contrast(103%);
+}
+
+.question-card::before{
+  background-size:min(82%,500px) auto;
+  opacity:.16;
+}
+
+.hero>*,.test-card>*,.exam-side>*,.question-card>*,.result-card>*{
+  position:relative;
+  z-index:1;
+}
+
+.hero,.test-card,.exam-side,.question-card,.result-card{
+  background-color:rgba(255,255,255,.92)!important;
+}
+
+.answer-btn.correct{
+  border-color:#239a61!important;
+  background:linear-gradient(135deg,#dff7e9,#f8fffb)!important;
+  color:#087548!important;
+  box-shadow:0 0 0 5px rgba(35,154,97,.14)!important;
+}
+.answer-btn.correct .answer-icon{color:#087548!important}
+
+.answer-btn.wrong{
+  border-color:#d63d58!important;
+  background:linear-gradient(135deg,#ffe5ea,#fff9fa)!important;
+  color:#b51f3d!important;
+  box-shadow:0 0 0 5px rgba(214,61,88,.14)!important;
+}
+.answer-btn.wrong .answer-icon{color:#b51f3d!important}
+
+.instant-feedback.ok{
+  border:2px solid #66c795!important;
+  background:linear-gradient(135deg,#e9faF1,#ffffff)!important;
+  color:#087548!important;
+}
+.instant-feedback.bad{
+  border:2px solid #ec8295!important;
+  background:linear-gradient(135deg,#fff0f3,#ffffff)!important;
+  color:#b51f3d!important;
+}
+.instant-feedback .correct-answer{
+  color:#087548!important;
+  font-weight:900;
+}
+
+.q-dot.correct{background:#e5f8ee!important;border-color:#58bd89!important;color:#087548!important}
+.q-dot.wrong{background:#ffecef!important;border-color:#e57a8d!important;color:#b51f3d!important}
+
+@media(max-width:768px){
+  body::before{background-size:220px auto;opacity:.06}
+  .hero::before,.test-card::before,.exam-side::before,.question-card::before,.result-card::before{
+    background-size:min(84%,320px) auto;
+    opacity:.13;
+  }
+  .question-card::before{opacity:.15}
+}
