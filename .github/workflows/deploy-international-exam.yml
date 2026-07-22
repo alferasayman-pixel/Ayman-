@@ -1,0 +1,40 @@
+name: Deploy International Organizations Exam
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'international-organizations-exam/**'
+      - '.github/workflows/deploy-international-exam.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload exam site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: international-organizations-exam
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
