@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="800" height="900">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E2C15D"/>
+      <stop offset="50%" stop-color="#C79C2E"/>
+      <stop offset="100%" stop-color="#F1D887"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EEF1F4"/>
+    </linearGradient>
+    <style>
+      .goldFill{fill:url(#gold);stroke:#C79C2E}
+      .shieldStroke{fill:url(#silver);stroke:url(#gold);stroke-width:16}
+      .textNavy{fill:#0B3769;font-family:'Tahoma','Arial',sans-serif;font-weight:700}
+      .textGold{fill:url(#gold);font-family:'Tahoma','Arial',sans-serif;font-weight:700}
+    </style>
+  </defs>
+  <text x="400" y="88" text-anchor="middle" class="textNavy" font-size="66">A+ ACADEMY</text>
+  <g transform="translate(220 150)">
+    <g fill="#0B3769">
+      <ellipse cx="-70" cy="210" rx="14" ry="32" transform="rotate(-42 -70 210)"/>
+      <ellipse cx="-92" cy="170" rx="14" ry="32" transform="rotate(-48 -92 170)"/>
+      <ellipse cx="-108" cy="128" rx="14" ry="32" transform="rotate(-56 -108 128)"/>
+      <ellipse cx="-116" cy="84" rx="14" ry="32" transform="rotate(-64 -116 84)"/>
+      <ellipse cx="-118" cy="38" rx="14" ry="32" transform="rotate(-72 -118 38)"/>
+      <ellipse cx="-112" cy="-8" rx="14" ry="32" transform="rotate(-80 -112 -8)"/>
+      <ellipse cx="-98" cy="-52" rx="14" ry="32" transform="rotate(-90 -98 -52)"/>
+      <ellipse cx="-78" cy="-90" rx="14" ry="32" transform="rotate(-100 -78 -90)"/>
+      <ellipse cx="-52" cy="-124" rx="14" ry="32" transform="rotate(-110 -52 -124)"/>
+    </g>
+    <path d="M-110 250 C-150 110 -120 -60 -20 -160" fill="none" stroke="#D9B24E" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(580 150) scale(-1 1)">
+    <g fill="#0B3769">
+      <ellipse cx="-70" cy="210" rx="14" ry="32" transform="rotate(-42 -70 210)"/>
+      <ellipse cx="-92" cy="170" rx="14" ry="32" transform="rotate(-48 -92 170)"/>
+      <ellipse cx="-108" cy="128" rx="14" ry="32" transform="rotate(-56 -108 128)"/>
+      <ellipse cx="-116" cy="84" rx="14" ry="32" transform="rotate(-64 -116 84)"/>
+      <ellipse cx="-118" cy="38" rx="14" ry="32" transform="rotate(-72 -118 38)"/>
+      <ellipse cx="-112" cy="-8" rx="14" ry="32" transform="rotate(-80 -112 -8)"/>
+      <ellipse cx="-98" cy="-52" rx="14" ry="32" transform="rotate(-90 -98 -52)"/>
+      <ellipse cx="-78" cy="-90" rx="14" ry="32" transform="rotate(-100 -78 -90)"/>
+      <ellipse cx="-52" cy="-124" rx="14" ry="32" transform="rotate(-110 -52 -124)"/>
+    </g>
+    <path d="M-110 250 C-150 110 -120 -60 -20 -160" fill="none" stroke="#D9B24E" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <path class="shieldStroke" d="M400 155 L545 205 L526 405 C515 500 458 564 400 598 C342 564 285 500 274 405 L255 205 Z"/>
+  <path d="M400 177 L523 218 L507 400 C498 475 450 531 400 562 C350 531 302 475 293 400 L277 218 Z" fill="#FFFFFF" opacity="0.65"/>
+  <polygon points="330,250 470,250 400,215" class="goldFill" stroke-width="5"/>
+  <rect x="355" y="250" width="90" height="18" rx="8" class="goldFill" stroke-width="4"/>
+  <line x1="455" y1="250" x2="455" y2="300" stroke="#C79C2E" stroke-width="6"/>
+  <circle cx="455" cy="302" r="6" fill="#C79C2E"/>
+  <rect x="335" y="300" width="130" height="165" rx="14" fill="#FFFFFF" stroke="#D1A53C" stroke-width="8"/>
+  <path d="M353 448 H445" stroke="#D1A53C" stroke-width="8" stroke-linecap="round"/>
+  <text x="400" y="393" text-anchor="middle" class="textGold" font-size="72">A+</text>
+  <path d="M215 520 H585 L560 592 H240 Z" fill="url(#gold)" stroke="#C79C2E" stroke-width="4"/>
+  <path d="M215 520 L165 555 L215 565 Z" fill="url(#gold)" stroke="#C79C2E" stroke-width="4"/>
+  <path d="M585 520 L635 555 L585 565 Z" fill="url(#gold)" stroke="#C79C2E" stroke-width="4"/>
+  <text x="400" y="567" text-anchor="middle" font-size="40" class="textNavy">أكاديمية A+ التعليمية</text>
+  <text x="400" y="688" text-anchor="middle" font-size="58" class="textNavy">أكاديمية A+ التعليمية</text>
+  <text x="400" y="760" text-anchor="middle" font-size="50" class="textNavy">+96566039842</text>
+</svg>
