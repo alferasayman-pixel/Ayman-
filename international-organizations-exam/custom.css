@@ -1,4 +1,8 @@
 /* تعديلات الهوية البصرية والتصحيح الفوري */
+:root{
+  --academy-mark:url("watermark.svg");
+}
+
 body::before{
   content:"";
   position:fixed;
@@ -6,11 +10,11 @@ body::before{
   background-image:var(--academy-mark);
   background-repeat:repeat;
   background-position:center top;
-  background-size:285px auto;
-  opacity:.085;
+  background-size:300px auto;
+  opacity:.08;
   pointer-events:none;
   z-index:0;
-  filter:saturate(95%) contrast(103%);
+  filter:saturate(96%) contrast(102%);
 }
 
 .app,.topbar,main,.toast{position:relative;z-index:1}
@@ -23,18 +27,19 @@ body::before{
   content:"";
   position:absolute;
   inset:0;
-  background-image:var(--academy-mark);
+  background-image:var(--academy-mark)!important;
   background-repeat:no-repeat;
-  background-position:center;
-  background-size:min(76%,430px) auto;
-  opacity:.16;
+  background-position:center center;
+  background-size:min(78%,460px) auto;
+  opacity:.18;
   pointer-events:none;
-  filter:saturate(96%) contrast(104%);
+  filter:saturate(97%) contrast(103%);
+  z-index:0;
 }
 
 .question-card::before{
-  background-size:min(84%,520px) auto;
-  opacity:.19;
+  background-size:min(86%,560px) auto;
+  opacity:.22;
 }
 
 .hero>*,.test-card>*,.exam-side>*,.question-card>*,.result-card>*{
@@ -43,7 +48,7 @@ body::before{
 }
 
 .hero,.test-card,.exam-side,.question-card,.result-card{
-  background-color:rgba(255,255,255,.91)!important;
+  background-color:rgba(255,255,255,.93)!important;
 }
 
 .answer-btn.correct{
@@ -81,10 +86,13 @@ body::before{
 .q-dot.wrong{background:#ffecef!important;border-color:#e57a8d!important;color:#b51f3d!important}
 
 @media(max-width:768px){
-  body::before{background-size:215px auto;opacity:.075}
+  body::before{background-size:220px auto;opacity:.07}
   .hero::before,.test-card::before,.exam-side::before,.question-card::before,.result-card::before{
-    background-size:min(86%,330px) auto;
-    opacity:.15;
+    background-size:min(86%,340px) auto;
+    opacity:.17;
   }
-  .question-card::before{opacity:.18}
+  .question-card::before{
+    background-size:min(92%,380px) auto;
+    opacity:.20;
+  }
 }
