@@ -6,11 +6,11 @@ body::before{
   background-image:var(--academy-mark);
   background-repeat:repeat;
   background-position:center top;
-  background-size:290px auto;
-  opacity:.07;
+  background-size:285px auto;
+  opacity:.085;
   pointer-events:none;
   z-index:0;
-  filter:saturate(95%) contrast(102%);
+  filter:saturate(95%) contrast(103%);
 }
 
 .app,.topbar,main,.toast{position:relative;z-index:1}
@@ -27,14 +27,14 @@ body::before{
   background-repeat:no-repeat;
   background-position:center;
   background-size:min(76%,430px) auto;
-  opacity:.14;
+  opacity:.16;
   pointer-events:none;
-  filter:saturate(96%) contrast(103%);
+  filter:saturate(96%) contrast(104%);
 }
 
 .question-card::before{
-  background-size:min(82%,500px) auto;
-  opacity:.16;
+  background-size:min(84%,520px) auto;
+  opacity:.19;
 }
 
 .hero>*,.test-card>*,.exam-side>*,.question-card>*,.result-card>*{
@@ -43,7 +43,7 @@ body::before{
 }
 
 .hero,.test-card,.exam-side,.question-card,.result-card{
-  background-color:rgba(255,255,255,.92)!important;
+  background-color:rgba(255,255,255,.91)!important;
 }
 
 .answer-btn.correct{
@@ -64,7 +64,7 @@ body::before{
 
 .instant-feedback.ok{
   border:2px solid #66c795!important;
-  background:linear-gradient(135deg,#e9faF1,#ffffff)!important;
+  background:linear-gradient(135deg,#e9faf1,#ffffff)!important;
   color:#087548!important;
 }
 .instant-feedback.bad{
@@ -81,10 +81,10 @@ body::before{
 .q-dot.wrong{background:#ffecef!important;border-color:#e57a8d!important;color:#b51f3d!important}
 
 @media(max-width:768px){
-  body::before{background-size:220px auto;opacity:.06}
+  body::before{background-size:215px auto;opacity:.075}
   .hero::before,.test-card::before,.exam-side::before,.question-card::before,.result-card::before{
-    background-size:min(84%,320px) auto;
-    opacity:.13;
+    background-size:min(86%,330px) auto;
+    opacity:.15;
   }
-  .question-card::before{opacity:.15}
+  .question-card::before{opacity:.18}
 }
